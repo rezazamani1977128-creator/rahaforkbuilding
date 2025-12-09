@@ -21,6 +21,7 @@ import { UnitsModule } from './modules/units/units.module';
 import { DiscussionsModule } from './modules/discussions/discussions.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
+import { HealthController } from './health.controller';
 
 @Module({
   imports: [
@@ -58,7 +59,7 @@ import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
     DiscussionsModule,
     NotificationsModule,
   ],
-  controllers: [],
+  controllers: [HealthController],
   providers: [
     {
       provide: APP_GUARD,

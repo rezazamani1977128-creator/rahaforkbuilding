@@ -1,0 +1,27 @@
+# Root ignore for monorepo
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Common noise
+.DS_Store
+
+# Frontend outputs
+smart-community-manager/node_modules
+smart-community-manager/dist
+smart-community-manager/coverage
+smart-community-manager/.turbo
+smart-community-manager/.vercel
+smart-community-manager/.netlify
+smart-community-manager/.parcel-cache
+smart-community-manager/storybook-static
+
+# Backend outputs
+smart-community-backend/node_modules
+smart-community-backend/dist
+smart-community-backend/build
+smart-community-backend/coverage
+smart-community-backend/.temp
+smart-community-backend/.tmp
+smart-community-backend/generated/prisma
